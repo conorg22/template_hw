@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Fortune Teller</title>
+</head>
+
+<body>
+
+    <h1>Your fortune is:</h1>
+    <div id="container"></div>
+
+    <script>
+        var fortunes = ["cats will cross your path", "birds will fall from the sky", "sharks will come from a tornado"];
+
+        function giveFortune(fortunes) {
+            var ran = Math.floor(Math.random() * fortunes.length);
+            document.getElementById("container").innerHTML = fortunes[ran];
+        }
+
+        giveFortune(fortunes);
+    </script>
+</body>
+
+</html>
